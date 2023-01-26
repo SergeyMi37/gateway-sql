@@ -77,7 +77,17 @@ ClassMethod Prompt() As %Status
 ClassMethod ImportSelect(filename = "", ByRef json, exec = "") As %Status
 {
 	set st=$$$OK
-	Set json=##class(%Library.DynamicAbstractObject).%FromJSON(filename)
+	write !,"Import from: "_filename
+	set f=##class(%File).%New(filename)
+	if f.Open("RSU") {
+	    set file=f.Read() 
+	}
+	else { 
+	    set msg = $System.Status.GetErrorText($g(%objlasterror))
+	    write msg
+	    quit $$$ERROR($$$GeneralError,msg)
+	}
+	Set json=##class(%Library.DynamicAbstractObject).%FromJSON(file)
 	set class=json.Classname
 	new %appTmp,%appClass,%appClassProp,%appClassPropVal,%appClassPropType,%appClassSave,%appClassPropSet
 	set AbstractObject=json.Instances
