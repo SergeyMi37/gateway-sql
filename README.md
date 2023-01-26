@@ -6,6 +6,12 @@
  
  [![Quality Gate Status](https://community.objectscriptquality.com/api/project_badges/measure?project=intersystems_iris_community%2Fgateway-sql&metric=alert_status)](https://community.objectscriptquality.com/dashboard?id=intersystems_iris_community%2Fgateway-sql)
  
+ ## What's new
+
+Added the ability to install the driver com.intersystems.jdbc.IRISDriver
+
+Docker install error fixed
+ 
 ## gateway-sql
 This project has several jdbc drivers and a program that copies them to your IRIS instance while creating settings in the SQLConection class in an interactive dialog with the ability to change properties.
 
@@ -79,52 +85,7 @@ You can see what instances of the %Library.SQLConnection class are in the module
 %Library.SQLConnection. useCASTCHAR =  type:string
 %Library.SQLConnection. useCOALESCE = 1 type:number
 %Library.SQLConnection. xadriver =  type:string
-
-%Library.SQLConnection. DSN =  type:string
-%Library.SQLConnection. Name = Default_Name_SQLConnection type:string
-%Library.SQLConnection. OnConnectStatement =  type:string
-%Library.SQLConnection. ReverseOJ = 0 type:number
-%Library.SQLConnection. URL = jdbc:sqlserver://ip address:port;databaseName=default_db type:string
-%Library.SQLConnection. Usr = Default_DB_UserName type:string
-%Library.SQLConnection. bUnicodeStream = 0 type:number
-%Library.SQLConnection. bindTSasString = 0 type:number
-%Library.SQLConnection. classpath = /opt/oracle/sqljdbc42.jar type:string
-%Library.SQLConnection. driver = com.microsoft.sqlserver.jdbc.SQLServerDriver type:string
-%Library.SQLConnection. isJDBC = 1 type:number
-%Library.SQLConnection. needlongdatalen = 0 type:number
-%Library.SQLConnection. noconcat =  type:string
-%Library.SQLConnection. nodefq = 0 type:number
-%Library.SQLConnection. nofnconv = 0 type:number
-%Library.SQLConnection. nvl = 0 type:number
-%Library.SQLConnection. properties =  type:string
-%Library.SQLConnection. pwd =  type:string
-%Library.SQLConnection. useCAST = 0 type:number
-%Library.SQLConnection. useCASTCHAR = 0 type:number
-%Library.SQLConnection. useCOALESCE = 1 type:number
-%Library.SQLConnection. xadriver =  type:string
-
-%Library.SQLConnection. DSN =  type:string
-%Library.SQLConnection. Name = Default_Name_SQLConnection type:string
-%Library.SQLConnection. OnConnectStatement =  type:string
-%Library.SQLConnection. ReverseOJ = 0 type:number
-%Library.SQLConnection. URL = jdbc:oracle:thin:@(DESCRIPTION_...) type:string
-%Library.SQLConnection. Usr = Default_DB_UserName type:string
-%Library.SQLConnection. bUnicodeStream = 0 type:number
-%Library.SQLConnection. bindTSasString = 0 type:number
-%Library.SQLConnection. classpath = /opt/oracle/ojdbc6.jar type:string
-%Library.SQLConnection. driver = oracle.jdbc.driver.OracleDriver type:string
-%Library.SQLConnection. isJDBC = 1 type:number
-%Library.SQLConnection. needlongdatalen = 0 type:number
-%Library.SQLConnection. noconcat =  type:string
-%Library.SQLConnection. nodefq = 0 type:number
-%Library.SQLConnection. nofnconv = 0 type:number
-%Library.SQLConnection. nvl = 0 type:number
-%Library.SQLConnection. properties =  type:string
-%Library.SQLConnection. pwd =  type:string
-%Library.SQLConnection. useCAST = 0 type:number
-%Library.SQLConnection. useCASTCHAR = 0 type:number
-%Library.SQLConnection. useCOALESCE = 1 type:number
-%Library.SQLConnection. xadriver =  type:string
+...
 
 ```
 
