@@ -3,12 +3,12 @@
   <Document name="appmsw-gateway-sql.ZPM">
     <Module>
       <Name>appmsw-gateway-sql</Name>
-      <Version>1.0.2</Version>
+      <Version>1.0.3</Version>
       <Description>Installation SQL Gateway Connections. Class path: postgresql-42.3.1.jar, mysql-connector-java-8.0.21.jar, sqljdbc42.jar, ojdbc6.jar</Description>
       <Keywords>jdbc</Keywords>
       <Author>
 		<Person>Mikhaylenko Sergey</Person>
-		<CopyrightDate>2022</CopyrightDate>
+		<CopyrightDate>2023</CopyrightDate>
 		<License>MIT</License>
 		<Notes>
 		repository:
