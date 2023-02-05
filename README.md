@@ -8,9 +8,11 @@
  
  ## What's new
 
-Added the ability to install the driver com.intersystems.jdbc.IRISDriver
+ Added web UI for selective item import
+ 
+http://localhost:52553/csp/sys/appmsw.core.uiInfo.cls
 
-Docker install error fixed
+![](https://raw.githubusercontent.com/SergeyMi37/gateway-sql/master/doc/Screenshot_15.png)
  
 ## gateway-sql
 This project has several jdbc drivers and a program that copies them to your IRIS instance while creating settings in the SQLConection class in an interactive dialog with the ability to change properties.
