@@ -19,6 +19,7 @@
 	  </Author>
       <Packaging>module</Packaging>
       <Resource Directory="cls" Name="appmsw.gateway.jdbc.CLS"/>
+      <Resource Directory="cls" Name="appmsw.core.PKG"/>
 	  <FileCopy Name="jdbc" Target="${libdir}jdbc/"/>
       <SourcesRoot>src</SourcesRoot>
       <AfterInstallMessage>

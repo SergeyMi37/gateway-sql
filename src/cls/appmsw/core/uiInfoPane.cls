@@ -1,4 +1,4 @@
-Class appmsw.core.uiInfoPane Extends %CSP.Util.Pane [ DependsOn = apptools.core.msg ]
+Class appmsw.core.uiInfoPane Extends %CSP.Util.Pane
 {
 
 Parameter version = "1.0.4";
