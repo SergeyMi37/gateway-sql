@@ -10,8 +10,12 @@ ClassMethod ImportSQLConnection(mode = "") As %Status
 	if $namespace'="%SYS" set msg="This project needs to be installed in the %SYS namespace" write !,msg quit $$$ERROR($$$GeneralError,msg)
 	set sourcedir=##class(%File).NormalizeDirectory("lib\jdbc\", ##class(%File).GetDirectory($zu(86)))
 	set jsonfile=sourcedir_"gateways.json"
-	if mode="view" set exec="##class(appmsw.gateway.jdbc).ImportView()"
-	else  set exec="##class(appmsw.gateway.jdbc).ImportChange($lb("""_sourcedir_"""))"
+	if mode="view" {set exec="##class(appmsw.gateway.jdbc).ImportView()"
+	}
+	elseif mode'="" {set exec=mode
+	}
+	else {set exec="##class(appmsw.gateway.jdbc).ImportChange($lb("""_sourcedir_"""))"
+	}
 	set st=..ImportSelect(jsonfile,.json,exec)
 	quit st
 }
@@ -77,7 +81,7 @@ ClassMethod Prompt() As %Status
 ClassMethod ImportSelect(filename = "", ByRef json, exec = "") As %Status
 {
 	set st=$$$OK
-	write !,"Import from: "_filename
+	;write !,"Import from: "_filename
 	set f=##class(%File).%New(filename)
 	if f.Open("RSU") {
 	    set file=f.Read() 

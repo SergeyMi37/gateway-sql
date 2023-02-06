@@ -3,7 +3,7 @@
   <Document name="appmsw-gateway-sql.ZPM">
     <Module>
       <Name>appmsw-gateway-sql</Name>
-      <Version>1.0.3</Version>
+      <Version>1.0.4</Version>
       <Description>Installation SQL Gateway Connections. Class path: postgresql-42.3.1.jar, mysql-connector-java-8.0.21.jar, sqljdbc42.jar, ojdbc6.jar</Description>
       <Keywords>jdbc</Keywords>
       <Author>
@@ -12,7 +12,7 @@
 		<License>MIT</License>
 		<Notes>
 		repository:
-		https://github.com/SergeyMi37/appmsw-gateway-sql
+		https://github.com/SergeyMi37/gateway-sql
 		description:
 		Installation SQL Gateway Connections. Class path: postgresql-42.3.1.jar, mysql-connector-java-8.0.21.jar, sqljdbc42.jar, ojdbc6.jar.
 		</Notes>
@@ -27,6 +27,9 @@
 
 &#13; You can import a class %Library.SQLConnection instance in the %SYS namespace with the command:
 &#13; %SYS>do ##class(appmsw.gateway.jdbc).ImportSQLConnection()
+
+&#13; you can import through the web interface to selectively import elements:
+&#13; http://localhost:52553/csp/sys/appmsw.core.uiInfo.cls
 	 </AfterInstallMessage>
     </Module>
   </Document>
