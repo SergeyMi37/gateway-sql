@@ -9,7 +9,6 @@
 [![Demo](https://img.shields.io/badge/Demo%20on-Cloud%20Run%20Deploy-F4A460)](https://gateway-sql.demo.community.intersystems.com/csp/sys/appmsw.core.uiInfo.cls)
  
  ## What's new
-
  Added web UI for selective item import
  
 http://localhost:52553/csp/sys/appmsw.core.uiInfo.cls
