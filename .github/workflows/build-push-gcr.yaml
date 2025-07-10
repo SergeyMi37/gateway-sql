@@ -7,7 +7,7 @@ on:
     - main
 
 env:
-  # Change this section according to your needs
+  # Change this section according to your needs 
   IMAGE_NAME:   gateway-sql
   SERVICE:      gateway-sql
   DOMAIN_NAME:  gateway-sql.demo.community.intersystems.com
